@@ -1,0 +1,56 @@
+﻿<Window x:Class="Policy_Renewal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Policy_Renewal"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Grid Background="AliceBlue">
+
+        <StackPanel Margin="0,2,-0.4,497.4" Orientation="Vertical" Background="Black">
+            <TextBlock x:Name="tbl_Title" Text="POLICY RENEWAL SYSTEM" Foreground="AntiqueWhite" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" FontSize="30" Width="420" Height="44" Margin="303,20,270.6,0"/>
+        </StackPanel>
+
+        <StackPanel Margin="30,95,529.6,64.4" Orientation="Vertical">
+
+            <StackPanel Margin="0,0,-0.4,0" Orientation="Vertical" Height="125">
+                <TextBlock x:Name="tbl_PolicyNo" Text="Policy Number" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" FontSize="20" Width="176" Height="28"/>
+                <TextBox x:Name="tbx_PolicyNo" Height="33" TextWrapping="Wrap" Text="Please enter policy number here" Margin="0,7,131.8,0" ToolTip="Enter Policy Number"/>
+                <Button Content="Search" HorizontalAlignment="Left" Width="50" Margin="0,6,0,6"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,0,-0.4,0" Orientation="Vertical" RenderTransformOrigin="0.5,0.5" Height="281">
+                <TextBlock x:Name="tbl_PolicyHolderInfo" Text="Policy Holder Information" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" FontSize="18" Width="251" Height="35"/>
+
+                <StackPanel Margin="0,0,-0.2,0" Orientation="Horizontal">
+                    <TextBlock x:Name="tbl_Name" TextWrapping="Wrap" Text="Name:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbx_Name" Height="23" TextWrapping="Wrap" Width="260" Margin="33,0,0,0"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,8,-0.2,0" Orientation="Horizontal">
+                    <TextBlock x:Name="tbl_DateOfBirth" TextWrapping="Wrap" Text="Birth Date:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbx_DateOfBirth" Height="23" TextWrapping="Wrap" Width="260" Margin="10,0,0,0"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,8,-0.2,0" Orientation="Horizontal">
+                    <TextBlock x:Name="tbl_Age" TextWrapping="Wrap" Text="Age:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbx_Age" Height="23" TextWrapping="Wrap" Width="260" Margin="45,0,0,0"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,8,-0.2,0" Orientation="Horizontal">
+                    <TextBlock x:Name="tbl_Address" TextWrapping="Wrap" Text="Address:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbx_Address" Height="78" TextWrapping="Wrap" Width="260" Margin="22,0,0,0"/>
+                </StackPanel>
+
+            </StackPanel>
+
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="440" VerticalAlignment="Top" Background="WhiteSmoke" Width="536" Margin="419,95,0,0"/>
+
+
+
+
+
+    </Grid>
+</Window>
