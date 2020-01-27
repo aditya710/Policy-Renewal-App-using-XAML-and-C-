@@ -24,5 +24,10 @@ namespace Policy_Renewal
         {
             InitializeComponent();
         }
+
+        private void tbx_PolicyType_TextChanged()
+        {
+
+        }
     }
 }
