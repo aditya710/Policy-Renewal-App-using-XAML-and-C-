@@ -1,12 +1,11 @@
-﻿<Window x:Class="Policy_Renewal.MainWindow"
+﻿<Window x:Class="Policy_Renewal.Window1"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Policy_Renewal"
         mc:Ignorable="d"
-        ResizeMode="CanResizeWithGrip" 
-        Title="System" Height="700.967" Width="1160.154">
+        Title="Window1" Height="720" Width="1000">
     <Grid Background="AliceBlue">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -147,11 +146,8 @@
                 <TextBox x:Name="tbx_MonthlyPrem" Height="29" TextWrapping="Wrap" Width="200" Margin="33,0,0,0"/>
             </StackPanel>
 
-            <Button HorizontalAlignment="Right" Content="Save" x:Name="btn_Save" Height="50" Width="100" Margin="0,0,25,0"/>
 
 
         </StackPanel>
-
-
     </Grid>
 </Window>
