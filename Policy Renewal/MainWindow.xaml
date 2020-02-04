@@ -6,152 +6,184 @@
         xmlns:local="clr-namespace:Policy_Renewal"
         mc:Ignorable="d"
         ResizeMode="CanResizeWithGrip" 
+        Loaded="Window_Loaded"
         Title="System" Height="700.967" Width="1160.154">
-    <Grid Background="AliceBlue">
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
 
-        <StackPanel Background="Black" Grid.ColumnSpan="32" Grid.Column="0" Margin="1,-2,0,0" Orientation="Vertical" Grid.Row="0" Grid.RowSpan="2">
-            <TextBlock x:Name="tbl_Title" Text="POLICY RENEWAL SYSTEM" Foreground="AntiqueWhite" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" FontSize="30" Width="427" Height="44"/>
-        </StackPanel>
+    <Viewbox Stretch="Uniform">
+        <Grid Background="AliceBlue" Height="671" Width="1154">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
-        <StackPanel Background="LightGray"  Orientation="Vertical" Grid.Row="3" Grid.RowSpan="5" Grid.Column="1" Grid.ColumnSpan="10">
-            <TextBlock x:Name="tbl_PolicyNo" Text="Policy Number" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" FontSize="20" Width="178" Height="28"/>
-            <TextBox x:Name="tbx_PolicyNo" Height="33" TextWrapping="Wrap" Text="Please enter policy number here" Margin="0,7,51,0" ToolTip="Enter Policy Number"/>
-            <Button Content="Search" HorizontalAlignment="Left" Height="25" Width="70" Margin="0,6,0,9"/>
-        </StackPanel>
-
-        <StackPanel Orientation="Vertical" Grid.Row="9" Grid.RowSpan="12" Grid.Column="1" Grid.ColumnSpan="10" RenderTransformOrigin="0.5,0.5" Height="315">
-            <TextBlock x:Name="tbl_PolicyHolderInfo" Text="Policy Holder Information" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" FontSize="18" Width="251" Height="35"/>
-
-            <StackPanel Margin="0,0,-0.2,0" Orientation="Horizontal">
-                <TextBlock x:Name="tbl_Name" TextWrapping="Wrap" Text="Name:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
-                <TextBox x:Name="tbx_Name" Height="23" TextWrapping="Wrap" Width="200" Margin="33,0,0,0"/>
+            <StackPanel Background="Black" Grid.ColumnSpan="32" Grid.Column="0" Margin="1,-2,0,0" Orientation="Vertical" Grid.Row="0" Grid.RowSpan="2">
+                <TextBlock x:Name="tbl_Title" Text="POLICY RENEWAL SYSTEM" Foreground="AntiqueWhite" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" FontSize="30" Width="427" Height="44"/>
             </StackPanel>
 
-            <StackPanel Margin="0,8,-0.2,0" Orientation="Horizontal">
-                <TextBlock x:Name="tbl_DateOfBirth" TextWrapping="Wrap" Text="Birth Date:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
-                <TextBox x:Name="tbx_DateOfBirth" Height="23" TextWrapping="Wrap" Width="200" Margin="10,0,0,0"/>
-            </StackPanel>
+            <Grid Grid.ColumnSpan="9" Grid.Column="1" Margin="10,10,15.6,2" Grid.Row="2" Grid.RowSpan="2">
+                <TextBlock x:Name="tbl_Month" Text="Current Month:" FontSize="18" TextWrapping="Wrap"  Height="30" Margin="0,11,82.4,11"/>
+                <Label x:Name="lbl_Month" Content="Month" FontSize="18" FontWeight="Bold" Margin="136,6,64.4,0"/>
+            </Grid>
+            <Grid Grid.ColumnSpan="11" Grid.Column="1" Margin="0,0,35.6,10" Grid.Row="5" Grid.RowSpan="4">
+                <StackPanel Background="LightGray"  Orientation="Vertical">
+                    <TextBlock x:Name="tbl_PolicyNo" Margin="8,12,0,0" Text="Search Policy" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" FontSize="20" Width="178" Height="28"/>
+                    <TextBox x:Name="tbx_PolicyNo"  Height="25" TextWrapping="Wrap" FontSize="17" ToolTip="Please enter policy number here" Margin="8,7,99.4,0" />
+                    <Button x:Name="btn_Search"  Content="Search" HorizontalAlignment="Left" Height="25" Width="70" Margin="8,6,0,9" FontSize="15" Click="btn_Search_Click" />
+                </StackPanel>
+            </Grid>
 
-            <StackPanel Margin="0,8,-0.2,0" Orientation="Horizontal">
-                <TextBlock x:Name="tbl_Age" TextWrapping="Wrap" Text="Age:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
-                <TextBox x:Name="tbx_Age" Height="23" TextWrapping="Wrap" Width="200" Margin="45,0,0,0"/>
-            </StackPanel>
+            <Grid Grid.ColumnSpan="11" Grid.Column="1" Margin="0,0,35.6,12.2" Grid.Row="10" Grid.RowSpan="11">
+                <StackPanel Orientation="Vertical" RenderTransformOrigin="0.5,0.5" Background="LightGray" 
+                    DataContext="{Binding IsLoaded, ElementName=lbx_policyDetails}" Margin="0,0,-0.6,9.8">
+                    <TextBlock x:Name="tbl_PolicyHolderInfo" Text="Policy Holder Information" Margin="8,12,-0.2,0" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" FontSize="18" Width="251" Height="35"/>
 
-            <StackPanel Margin="0,8,-0.2,0" Orientation="Horizontal">
-                <TextBlock x:Name="tbl_Address" TextWrapping="Wrap" Text="Address:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
-                <TextBox x:Name="tbx_Address" Height="78" TextWrapping="Wrap" Width="200" Margin="22,0,0,0"/>
-            </StackPanel>
+                    <StackPanel Margin="0,0,-0.2,0" Orientation="Horizontal">
+                        <TextBlock x:Name="tbl_FirstName" TextWrapping="Wrap" Text="First Name:" FontSize="15" Margin="8,0,-0.2,0" VerticalAlignment="Center"/>
+                        <TextBox x:Name="tbx_FirstName" Text="{Binding firstName}" FontSize="17" Height="25" TextWrapping="Wrap" Width="230" Margin="8,0,0,0"/>
+                    </StackPanel>
 
-        </StackPanel>
+                    <StackPanel Margin="0,8,-0.2,0" Orientation="Horizontal">
+                        <TextBlock x:Name="tbl_LastName" TextWrapping="Wrap" Text="Last Name:" FontSize="15" Margin="8,0,-0.2,0" VerticalAlignment="Center"/>
+                        <TextBox x:Name="tbx_LastName" Text="{Binding lastName}" FontSize="17" Height="25" TextWrapping="Wrap" Width="230" Margin="10,0,0,0"/>
+                    </StackPanel>
 
-        <StackPanel Orientation="Vertical" Grid.Row="3" Grid.RowSpan="17" Grid.Column="12" Grid.ColumnSpan="19" Height="558" VerticalAlignment="Top" Background="WhiteSmoke" Margin="30,0,0,0" >
-            <TextBlock x:Name="tbl_PolicyInfo" Text="Policy Details" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" FontSize="24" Width="164" Height="35" />
-            <StackPanel Margin="30,30,191.8,0" Orientation="Horizontal">
-                <TextBlock x:Name="tbl_PolicyType" TextWrapping="Wrap" Text="Policy Type:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
-                <TextBox x:Name="tbx_PolicyType" Height="29" TextWrapping="Wrap" Width="231" Margin="33,0,0,0"/>
-            </StackPanel>
+                    <StackPanel Margin="0,8,-0.2,0" Orientation="Horizontal">
+                        <TextBlock x:Name="tbl_DateOfBirth" TextWrapping="Wrap" Text="Birth Date:" FontSize="15" Margin="8,0,-0.2,0" VerticalAlignment="Center"/>
+                        <TextBox x:Name="tbx_DateOfBirth" Text="{Binding birthDate, StringFormat=\{0:d\}}"  FontSize="17" Height="25" TextWrapping="Wrap" Width="230" Margin="13,0,0,0"/>
+                    </StackPanel>
 
-            <StackPanel Margin="30,30,37.8,0" Orientation="Horizontal">
-                <TextBlock x:Name="tbl_StartDate" TextWrapping="Wrap" Text="Start Date:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
-                <DatePicker x:Name="dp_StartDate" Margin="33,0,0,0" Width="111"/>
-                <TextBlock x:Name="tbl_EndDate" TextWrapping="Wrap" Text="End Date:" FontSize="13" Margin="70,0,-0.2,0" VerticalAlignment="Center"/>
-                <DatePicker x:Name="dp_EndDate" Margin="33,0,0,0" Width="111"/>
-            </StackPanel>
+                    <StackPanel Margin="0,8,-0.2,0" Orientation="Horizontal">
+                        <TextBlock x:Name="tbl_Age" TextWrapping="Wrap" Text="Age:" FontSize="15" Margin="8,0,-0.2,0" VerticalAlignment="Center"/>
+                        <TextBox x:Name="tbx_Age" Text="{Binding age}" FontSize="17" Height="25" TextWrapping="Wrap" Width="230" Margin="54,0,0,0"/>
+                    </StackPanel>
 
-            <StackPanel Margin="30,30,37.8,0" Orientation="Horizontal" Height="55">
-                <TextBlock x:Name="tbl_SupPlans" TextWrapping="Wrap" Text="Supplementary Plans:" FontSize="13" Margin="0,0,0.2,0" VerticalAlignment="Center"/>
-            </StackPanel>
+                    <StackPanel Margin="0,8,-0.2,0" Orientation="Horizontal">
+                        <TextBlock x:Name="tbl_Address" TextWrapping="Wrap" Text="Address:" FontSize="15" Margin="8,0,-0.2,0" VerticalAlignment="Center"/>
+                        <TextBox x:Name="tbx_Address" Text="{Binding address}" FontSize="17" Height="54" TextWrapping="Wrap" Width="230" Margin="27,0,0,0"/>
+                    </StackPanel>
 
-            <StackPanel Margin="30,0,37.8,0" Orientation="Horizontal" Height="20">
-                <CheckBox x:Name="cb_AIB" VerticalAlignment="Center"/>
-                <TextBlock x:Name="tbl_AIB" TextWrapping="Wrap" Text="Accidental Indemnity Benefit" FontSize="13" Margin="10,0,-0.2,0" VerticalAlignment="Center"/>
-                <CheckBox x:Name="cb_FIB" VerticalAlignment="Center" Margin="100,0,0,0"/>
-                <TextBlock x:Name="tbl_FIB" TextWrapping="Wrap" Text="Family Income Benefit" FontSize="13" Margin="10,0,-0.2,0" VerticalAlignment="Center"/>
-            </StackPanel>
-            <StackPanel Margin="30,10,37.8,0" Orientation="Horizontal" Height="20">
-                <CheckBox x:Name="cb_ADB" VerticalAlignment="Center"/>
-                <TextBlock x:Name="tbl_ADB" TextWrapping="Wrap" Text="Accidental Death Benefit" FontSize="13" Margin="10,0,-0.2,0" VerticalAlignment="Center"/>
-                <CheckBox x:Name="cb_TIR" VerticalAlignment="Center" Margin="123,0,0,0"/>
-                <TextBlock x:Name="tbl_TIR" TextWrapping="Wrap" Text="Family Income Benefit" FontSize="13" Margin="10,0,-0.2,0" VerticalAlignment="Center"/>
-            </StackPanel>
+                </StackPanel>
+            </Grid>
 
-            <StackPanel Margin="30,30,171,0" Orientation="Horizontal">
-                <TextBlock x:Name="tbl_SumAssured" TextWrapping="Wrap" Text="Sum Assured:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
-                <TextBox x:Name="tbx_SumAssured" Height="29" TextWrapping="Wrap" Width="200" Margin="60,0,0,0"/>
-            </StackPanel>
+            <Grid Grid.ColumnSpan="20" Grid.Column="12" Margin="30.4,0,35.6,17.2" Grid.Row="3" Grid.RowSpan="18">
 
-            <StackPanel Margin="30,30,171,0" Orientation="Horizontal">
-                <TextBlock x:Name="tbl_MaturityAmt" TextWrapping="Wrap" Text="Maturity Amount:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
-                <TextBox x:Name="tbx_MaturityAmt" Height="29" TextWrapping="Wrap" Width="200" Margin="37,0,0,0"/>
-            </StackPanel>
+                <StackPanel Orientation="Vertical" Height="559" VerticalAlignment="Top" Background="WhiteSmoke" RenderTransformOrigin="0.5,0.5" Margin="0,0,-0.2,-0.2" >
+                    <TextBlock x:Name="tbl_PolicyInfo" Text="Policy Details" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontWeight="Bold" FontSize="24" Width="164" Height="35" />
+                    <StackPanel Margin="30,30,-0.6,0" Orientation="Horizontal">
+                        <TextBlock x:Name="tbl_PolicyType" TextWrapping="Wrap" Text="Policy Type:" FontSize="15" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
+                        <TextBox x:Name="tbx_PolicyType" Height="30" FontSize="19" TextWrapping="Wrap" Width="231" Margin="28,0,0,0"/>
+                        <TextBlock x:Name="tbl_PolicyStatus" TextWrapping="Wrap" Text="Policy Status:" FontSize="15" Margin="20,0,-0.2,0" VerticalAlignment="Center"/>
+                        <TextBox x:Name="tbx_PolicyStatus" Height="30" FontSize="19" TextWrapping="Wrap" Width="132" Margin="28,0,0,0"/>
+                    </StackPanel>
 
-            <StackPanel Margin="30,30,171,0" Orientation="Horizontal">
-                <TextBlock x:Name="tbl_MonthlyPrem" TextWrapping="Wrap" Text="Monthly Premium:" FontSize="13" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
-                <TextBox x:Name="tbx_MonthlyPrem" Height="29" TextWrapping="Wrap" Width="200" Margin="33,0,0,0"/>
-            </StackPanel>
+                    <StackPanel Margin="30,20,-0.4,0" Orientation="Horizontal" Height="21">
+                        <TextBlock TextWrapping="Wrap" Text="Please change dates to renew the policy" Margin="0,0,-0.4,0" Background="LightYellow" FontSize="16" Foreground="Black" FontWeight="Bold"/>
+                    </StackPanel>
 
-            <Button HorizontalAlignment="Right" Content="Save" x:Name="btn_Save" Height="50" Width="100" Margin="0,0,25,0"/>
+                    <StackPanel Margin="30,10,37.8,0" Orientation="Horizontal">
+                        <TextBlock x:Name="tbl_StartDate" TextWrapping="Wrap" Text="Start Date:" FontSize="15" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
+                        <DatePicker x:Name="dp_StartDate" Margin="33,0,0,0" Height="30" FontSize="19" Width="127" SelectedDateChanged="RenewPolicyDate"/>
+                        <TextBlock x:Name="tbl_EndDate" TextWrapping="Wrap" Text="End Date:" FontSize="15" Margin="70,0,-0.2,0" VerticalAlignment="Center"/>
+                        <DatePicker x:Name="dp_EndDate" Margin="33,0,0,0" Height="30" FontSize="19" Width="127"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="30,30,171,0" Orientation="Horizontal">
+                        <TextBlock x:Name="tbl_SumAssured" TextWrapping="Wrap" Text="Sum Assured:" FontSize="15" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
+                        <TextBox x:Name="tbx_SumAssured" Height="30" FontSize="19" TextWrapping="Wrap" Width="153" Margin="60,0,0,0" TextChanged="tbx_SumAssured_TextChanged"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="30,30,171,0" Orientation="Horizontal">
+                        <TextBlock x:Name="tbl_MonthlyPrem" TextWrapping="Wrap" Text="Monthly Premium:" FontSize="15" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
+                        <TextBox x:Name="tbx_MonthlyPrem" IsEnabled="False" Height="30" FontSize="19" TextWrapping="Wrap" Width="152" Margin="33,0,0,0" FontWeight="ExtraBlack"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="30,30,171,0" Orientation="Horizontal">
+                        <TextBlock x:Name="tbl_BenefitAmt" TextWrapping="Wrap" Text="Benefit Amount:" FontSize="15" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
+                        <TextBox x:Name="tbx_BenefitAmt" IsEnabled="False" Height="30" FontSize="19" TextWrapping="Wrap" Width="153" Margin="44,0,0,0" FontWeight="ExtraBlack"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="30,15,37.8,0" Orientation="Horizontal" Height="55">
+                        <TextBlock x:Name="tbl_SupPlans" TextWrapping="Wrap" Text="Supplementary Plans:" FontSize="15" Margin="0,0,0.2,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Margin="30,0,37.8,0" Orientation="Horizontal" Height="20">
+                        <CheckBox x:Name="cb_AIB" Margin="0,3,0,0" Checked="cb_AIB_Checked" Unchecked="cb_AIB_Unchecked" Height="17" Width="17" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="tbl_AIB" TextWrapping="Wrap" Text="Accidental Indemnity Benefit" FontSize="15" Margin="10,0,-0.2,0" VerticalAlignment="Center"/>
+                        <CheckBox x:Name="cb_FIB" VerticalAlignment="Center" Checked="cb_FIB_Checked" Unchecked="cb_FIB_Unchecked" Height="17" Width="17" Margin="100,0,0,0"/>
+                        <TextBlock x:Name="tbl_FIB" TextWrapping="Wrap" Text="Family Income Benefit" FontSize="15" Margin="10,0,-0.2,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Margin="30,10,37.8,0" Orientation="Horizontal" Height="20">
+                        <CheckBox x:Name="cb_ADB" VerticalAlignment="Top" Checked="cb_ADB_Checked" Unchecked="cb_ADB_Unchecked" Height="17" Width="17"/>
+                        <TextBlock x:Name="tbl_ADB" TextWrapping="Wrap" Text="Accidental Death Benefit" FontSize="15" Margin="10,0,-0.2,0" VerticalAlignment="Center"/>
+                        <CheckBox x:Name="cb_TIR" VerticalAlignment="Top" Margin="128,0,0,0" Checked="cb_TIR_Checked" Unchecked="cb_TIR_Unchecked" Height="17" Width="17"/>
+                        <TextBlock x:Name="tbl_TIR" TextWrapping="Wrap" Text="Team Insurance Rider" FontSize="15" Margin="10,0,-0.2,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Button HorizontalAlignment="Right" Content="Renew" x:Name="btn_Save" Height="50" Width="100" Margin="0,15,15,0" Click="btn_Renew_Click"/>
 
 
-        </StackPanel>
+
+                </StackPanel>
 
 
-    </Grid>
+
+
+            </Grid>
+
+
+
+
+        </Grid>
+    </Viewbox>
 </Window>

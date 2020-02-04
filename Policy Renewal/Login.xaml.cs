@@ -38,7 +38,7 @@ namespace Policy_Renewal
 
             else
             {
-                MessageBox.Show("Wrong PIN", "Error");
+                MessageBox.Show("Wrong PIN. Please enter correct pin", "Error");
             }
         }
     }
