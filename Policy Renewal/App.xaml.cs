@@ -20,12 +20,12 @@ namespace Policy_Renewal
         {
             //_expPolicyInfo = GenerateData(3);
 
-            _expPolicyInfo = XMLOperations.ReadXML<ObservableCollection<PolicyDetailsProperties>>("ExpiredPolicies.xml");
+            //_expPolicyInfo = XMLOperations.ReadXML<ObservableCollection<PolicyDetailsProperties>>("ExpiredPolicies.xml");
 
-            if (_expPolicyInfo == null)
-            {
-                _expPolicyInfo = new ObservableCollection<PolicyDetailsProperties>();
-            }
+            //if (_expPolicyInfo == null)
+            //{
+            //    _expPolicyInfo = new ObservableCollection<PolicyDetailsProperties>();
+            //}
         }
 
         private ObservableCollection<PolicyDetailsProperties> GenerateData(int cnt)
@@ -39,11 +39,12 @@ namespace Policy_Renewal
 
             for (int i = 0; i < cnt; i++)
             {
-                polList.Add(new PolicyDetailsProperties 
+                polList.Add(new PolicyDetailsProperties
                 {
                     policyNo = 34500.ToString(),
                     firstName = "Aditya",
                     lastName = "Shelar",
+                    fullName = "Aditya Shelar",
                     birthDate = date1,
                     age = 26,
                     address = "Am Steingarten 14, App No. 365, Mannheim",
@@ -66,7 +67,7 @@ namespace Policy_Renewal
 
         private void Application_Exit(object sender, ExitEventArgs e)
         {
-            XMLOperations.WriteXml<ObservableCollection<PolicyDetailsProperties>>(_expPolicyInfo, "ExpiredPolicies.xml");
+            //XMLOperations.WriteXml<ObservableCollection<PolicyDetailsProperties>>(_expPolicyInfo, "ExpiredPolicies.xml");
         }
     }
 }

@@ -18,7 +18,7 @@ namespace Policy_Renewal
 
                 FileStream stream;
 
-                stream = new FileStream(file, FileMode.Create);
+                stream = new FileStream(file, FileMode.Open, FileAccess.ReadWrite);
 
                 serializer.Serialize(stream, data);
                 stream.Close();
@@ -29,11 +29,19 @@ namespace Policy_Renewal
 
         internal static T ReadXML<T>(string file)
         {
+            try
+            {
                 using (StreamReader sr = new StreamReader(file))
                 {
                     XmlSerializer xmlSer = new XmlSerializer(typeof(T));
                     return (T)xmlSer.Deserialize(sr);
                 }
+            }
+
+            catch //(Exception x)
+            {
+                return default(T);
+            }
         }
     }
 }

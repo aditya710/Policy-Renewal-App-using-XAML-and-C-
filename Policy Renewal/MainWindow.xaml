@@ -142,12 +142,13 @@
 
                     <StackPanel Margin="30,30,171,0" Orientation="Horizontal">
                         <TextBlock x:Name="tbl_SumAssured" TextWrapping="Wrap" Text="Sum Assured:" FontSize="15" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
-                        <TextBox x:Name="tbx_SumAssured" Height="30" FontSize="19" TextWrapping="Wrap" Width="153" Margin="60,0,0,0" TextChanged="tbx_SumAssured_TextChanged"/>
+                        <TextBox x:Name="tbx_SumAssured" Height="30" FontSize="19" TextWrapping="Wrap" Width="153" Margin="62,0,0,0" TextChanged="tbx_SumAssured_TextChanged"/>
+                        <TextBlock x:Name="tbl_euro" TextWrapping="Wrap" Text="€" FontSize="15" Margin="4,0,-0.2,0" VerticalAlignment="Center"/>
                     </StackPanel>
 
                     <StackPanel Margin="30,30,171,0" Orientation="Horizontal">
                         <TextBlock x:Name="tbl_MonthlyPrem" TextWrapping="Wrap" Text="Monthly Premium:" FontSize="15" Margin="0,0,-0.2,0" VerticalAlignment="Center"/>
-                        <TextBox x:Name="tbx_MonthlyPrem" IsEnabled="False" Height="30" FontSize="19" TextWrapping="Wrap" Width="152" Margin="33,0,0,0" FontWeight="ExtraBlack"/>
+                        <TextBox x:Name="tbx_MonthlyPrem" IsEnabled="False" Height="30" FontSize="19" TextWrapping="Wrap" Width="153" Margin="31,0,0,0" FontWeight="ExtraBlack"/>
                     </StackPanel>
 
                     <StackPanel Margin="30,30,171,0" Orientation="Horizontal">
