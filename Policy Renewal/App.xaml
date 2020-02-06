@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Policy_Renewal"
              Startup="App_Startup"
              Exit="Application_Exit"
-             StartupUri="MainWindow.xaml">
+             StartupUri="Login.xaml">
     <Application.Resources>
          
     </Application.Resources>

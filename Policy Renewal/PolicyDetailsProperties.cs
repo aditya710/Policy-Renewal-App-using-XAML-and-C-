@@ -14,6 +14,7 @@ namespace Policy_Renewal
         public string fullName { get; set; }
         public DateTime birthDate { get; set; }
         public int age { get; set; }
+        public string email { get; set; }
         public string address { get; set; }
         public string policyType { get; set; }
         public string policyStatus { get; set; }

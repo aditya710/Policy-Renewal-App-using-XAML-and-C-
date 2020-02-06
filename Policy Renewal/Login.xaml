@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="System Login" Height="400" Width="400">
     <Grid>
-        <!--<Grid.Background>
-            
-        </Grid.Background>-->
-        
+        <Grid.Background>
+            <ImageBrush></ImageBrush>
+        </Grid.Background>
+
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>

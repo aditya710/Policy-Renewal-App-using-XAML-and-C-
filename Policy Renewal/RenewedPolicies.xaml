@@ -1,0 +1,133 @@
+﻿<Window x:Class="Policy_Renewal.RenewedPolicies"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Policy_Renewal"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="RenewedPolicies" Height="700" Width="1311.698">
+
+    <Viewbox Stretch="Uniform" Margin="0,0,3.6,0.4" >
+        <Grid  Background="AliceBlue">
+
+            <StackPanel  Orientation="Horizontal" Margin="0,0,482,399">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Filter By Policy No/Name: " Foreground="Black" Margin="10,10,10,10" VerticalAlignment="Top"/>
+                <TextBox x:Name="tbx_filterRenPolicies" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="5,10,10,10" Width="120" TextChanged="tbx_filterRenPolicies_TextChanged"/>
+            </StackPanel>
+
+            <DataGrid x:Name="RenewedPolicyGrid" FontSize="20" AutoGenerateColumns="True"  Height="388" Width="790" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,54,0,0"/>
+
+
+            <!--<ListBox x:Name="Lbx_RenPolicies" 
+                HorizontalAlignment="Left" 
+                Height="254" VerticalAlignment="Top" 
+                Width="770" Margin="10,44,0,0" >-->
+
+            <!--<ListBox.Template>
+                <ControlTemplate>
+                    <TextBlock HorizontalAlignment="Left">Policy No</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">First Name</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">Last Name</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">BirthDate</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">Age</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">Address</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">Policy Type</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">Policy Status</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">Start Date</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">End Date</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">Sum Assured</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">Benefit Amount</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">Monthly Premium</TextBlock>
+                    <TextBlock HorizontalAlignment="Left">Policy Renewal Date</TextBlock>
+                </ControlTemplate>
+            </ListBox.Template>-->
+
+            <!--<ControlTemplate>
+                        <DockPanel LastChildFill="True">
+                            <Grid DockPanel.Dock="Top" Height="30" Background="AliceBlue">
+                                
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                    <ColumnDefinition Width="150"></ColumnDefinition>
+                                    <ColumnDefinition Width="40"></ColumnDefinition>
+                                    <ColumnDefinition Width="270"></ColumnDefinition>
+                                    <ColumnDefinition Width="120"></ColumnDefinition>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" HorizontalAlignment="Left">Policy No</Label>
+                                <Label Grid.Column="1" HorizontalAlignment="Left">First Name</Label>
+                                <Label Grid.Column="2" HorizontalAlignment="Left">Last Name</Label>
+                                <Label Grid.Column="3" HorizontalAlignment="Left">BirthDate</Label>
+                                <Label Grid.Column="4" HorizontalAlignment="Left">Age</Label>
+                                <Label Grid.Column="5" HorizontalAlignment="Left">Address</Label>
+                                <Label Grid.Column="6" HorizontalAlignment="Left">Policy Type</Label>
+                                <Label Grid.Column="7" HorizontalAlignment="Left">Policy Status</Label>
+                                <Label Grid.Column="8" HorizontalAlignment="Left">Start Date</Label>
+                                <Label Grid.Column="9" HorizontalAlignment="Left">End Date</Label>
+                                <Label Grid.Column="10" HorizontalAlignment="Left">Sum Assured</Label>
+                                <Label Grid.Column="11" HorizontalAlignment="Left">Benefit Amount</Label>
+                                <Label Grid.Column="12" HorizontalAlignment="Left">Monthly Premium</Label>
+                                <Label Grid.Column="13" HorizontalAlignment="Left">Policy Renewal Date</Label>
+                            </Grid>
+                            <ItemsPresenter></ItemsPresenter>
+                        </DockPanel>
+                    </ControlTemplate>
+                </ListBox.Template>-->
+
+
+            <!--<Grid Margin="0,2" Background="FloralWhite">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="150"></ColumnDefinition>
+                                <ColumnDefinition Width="40"></ColumnDefinition>
+                                <ColumnDefinition Width="270"></ColumnDefinition>
+                                <ColumnDefinition Width="120"></ColumnDefinition>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                                <ColumnDefinition Width="80"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>-->
+            <!--<ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation ="Horizontal"  Margin="0,3,0,3">
+                        <TextBlock Text="{Binding policyNo}" Margin="10,10,10,10" />
+                        <TextBlock Text="{Binding firstName}" Margin="10,10,10,10" />
+                        <TextBlock Text="{Binding lastName}" Margin="10,10,10,10" />
+                        <TextBlock Text="{Binding birthDate}" Margin="10,10,10,10" />
+                        <TextBlock Text="{Binding age}" Margin="10,10,10,10" />
+                        <TextBlock Text="{Binding address}" Margin="10,10,10,10"/>
+                        <TextBlock Text="{Binding policyType}" Margin="10,10,10,10"/>
+                        <TextBlock Text="{Binding policyStatus}" Margin="10,10,10,10"/>
+                        <TextBlock Text="{Binding startDate}" Margin="10,10,10,10"/>
+                        <TextBlock Text="{Binding endDate}" Margin="10,10,10,10"/>
+                        <TextBlock Text="{Binding sumAssured}" Margin="10,10,10,10"/>
+                        <TextBlock Text="{Binding benefitAmount}" Margin="10,10,10,10"/>
+                        <TextBlock Text="{Binding monthlyPremium}" Margin="10,10,10,10"/>
+                        <TextBlock Text="{Binding policyRenewedDate}" Margin="10,10,10,10"/>
+                    </StackPanel>
+                    -->
+            <!--</Grid>-->
+            <!--
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>-->
+
+        </Grid>
+
+    </Viewbox>
+
+</Window>

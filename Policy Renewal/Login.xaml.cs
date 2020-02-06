@@ -26,14 +26,14 @@ namespace Policy_Renewal
 
         private void btn_Login_Click(object sender, RoutedEventArgs e)
         {
-            if (txtPasswordBox.Password.ToString() == "0710" )
+            if (txtPasswordBox.Password.ToString() == "0700" )
             {
                 var win = new MainWindow();
                 win.Owner = this;
                 win.Height = 700.967;
                 win.Width = 1160.154;
                 win.Show();
-                Visibility = Visibility.Collapsed;
+                Visibility = Visibility.Visible;
             }
 
             else
